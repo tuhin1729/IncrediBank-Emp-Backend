@@ -11,7 +11,7 @@ import random
 app = Flask(__name__)
 app.secret_key = str(random.randint(536804,78213213765))
 CORS(app)
-ip = "43.204.152.119"
+ip = ""
 
 with open('private_key.pem', 'rb') as key_file:
 	private_key = key_file.read()
